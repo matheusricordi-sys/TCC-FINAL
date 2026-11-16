@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: epi-project
+    runtime: php
+    plan: free
+    startCommand: php -S 0.0.0.0:10000
+    envVars:
+      - key: PHP_VERSION
+        value: 8.1

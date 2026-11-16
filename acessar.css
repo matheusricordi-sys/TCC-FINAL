@@ -1,0 +1,171 @@
+/* Estilos exclusivos da página de acesso e orçamento */
+body.access-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 8% 7%, #c7ddff 0, transparent 24%),
+        radial-gradient(circle at 94% 34%, #d8faeb 0, transparent 21%),
+        #f6f9ff;
+}
+
+.access-page .access-content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 142px 25px 85px;
+}
+
+.access-page .access-choice {
+    max-width: 860px;
+    margin: 0 auto 72px;
+    text-align: center;
+}
+
+.access-page .access-kicker,
+.access-page .form-step {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 99px;
+    background: #e0ebff;
+    color: #1745a6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.access-page .access-choice h1 {
+    margin: 18px 0 14px;
+    color: #0b1b3a;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.03;
+    letter-spacing: -2.5px;
+}
+
+.access-page .access-choice > p {
+    max-width: 620px;
+    margin: 0 auto;
+    color: #52637f;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.access-page .access-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.access-page .access-option {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 14px;
+    position: relative;
+    min-height: 145px;
+    padding: 24px;
+    overflow: hidden;
+    border: 1px solid #d9e3f2;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 12px 28px rgba(21, 47, 91, .09);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.access-page .access-option::after {
+    position: absolute;
+    right: 23px;
+    bottom: 20px;
+    content: "→";
+    color: #1d4ed8;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.access-page .access-option:hover {
+    transform: translateY(-6px);
+    border-color: #7aa6ff;
+    box-shadow: 0 20px 36px rgba(21, 47, 91, .16);
+}
+
+.access-page .access-option strong {
+    display: block;
+    padding-right: 20px;
+    color: #10254c;
+    font: 700 18px "DM Sans", sans-serif;
+}
+
+.access-page .access-option small {
+    display: block;
+    margin-top: 7px;
+    color: #62718b;
+    line-height: 1.55;
+}
+
+.access-page .access-option b { display: none; }
+
+.access-page .option-icon {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #dbeafe, #bfdbfe);
+    color: #1745a6;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.access-page .quote-option .option-icon {
+    background: linear-gradient(145deg, #d1fae5, #a7f3d0);
+    color: #087443;
+}
+
+.access-page .quote-option::after { color: #087443; }
+
+.access-page .quote-layout {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    overflow: hidden;
+    border: 1px solid #dbe5f2;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 24px 55px rgba(21, 47, 91, .16);
+}
+
+.access-page .quote-benefits {
+    padding: 55px 48px;
+    color: white;
+    background: linear-gradient(155deg, #071b45 0%, #123d9e 62%, #2563eb 100%);
+}
+
+.access-page .quote-benefits .access-kicker { background: rgba(191, 219, 254, .16); color: #dbeafe; }
+.access-page .quote-benefits h2 { margin: 17px 0 15px; font-size: 38px; line-height: 1.1; }
+.access-page .quote-benefits > p { color: #dbeafe; line-height: 1.75; }
+.access-page .quote-benefits .check-list { margin-top: 30px; }
+.access-page .quote-benefits .check-list li { padding: 10px 0 10px 29px; color: #eff6ff; }
+.access-page .quote-benefits .check-list li::before { color: #93c5fd; }
+
+.access-page .quote-form { display: grid; gap: 16px; padding: 48px; background: white; }
+.access-page .quote-form h2 { margin: -4px 0 0; color: #10254c; font-size: 31px; }
+.access-page .quote-form > p { margin: -7px 0 8px; color: #64748b; line-height: 1.65; }
+.access-page .quote-form label { display: grid; gap: 7px; color: #344968; font-size: 13px; font-weight: 700; }
+.access-page .quote-form input,
+.access-page .quote-form textarea { border: 1px solid #d7e0ec; border-radius: 10px; background: #f8faff; padding: 13px; }
+.access-page .quote-form input:focus,
+.access-page .quote-form textarea:focus { outline: none; border-color: #2563eb; background: white; box-shadow: 0 0 0 4px #dbeafe; }
+.access-page .quote-form .btn { min-height: 48px; margin-top: 5px; border-radius: 10px; box-shadow: 0 8px 14px #1d4ed844; }
+
+@media (max-width: 1000px) {
+    .access-page .quote-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 650px) {
+    .access-page .access-content { padding: 110px 16px 55px; }
+    .access-page .access-choice { margin-bottom: 45px; }
+    .access-page .access-options { grid-template-columns: 1fr; }
+    .access-page .access-option { min-height: 125px; padding: 20px; }
+    .access-page .quote-benefits,
+    .access-page .quote-form { padding: 32px 23px; }
+    .access-page .quote-benefits h2 { font-size: 32px; }
+}

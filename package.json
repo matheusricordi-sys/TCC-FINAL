@@ -1,0 +1,12 @@
+{
+  "name": "epi-project",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento de EPI",
+  "main": "index.php",
+  "scripts": {
+    "start": "php -S localhost:8000"
+  },
+  "keywords": ["epi", "php"],
+  "author": "",
+  "license": "ISC"
+}

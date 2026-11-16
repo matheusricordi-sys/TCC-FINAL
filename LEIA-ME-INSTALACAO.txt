@@ -1,0 +1,15 @@
+SAFEFLOW - INSTALACAO NO INFINITYFREE
+
+1. Envie o conteudo desta pasta para htdocs, mantendo a estrutura de pastas.
+2. Abra config/config.php e confirme host, nome do banco, usuario e senha MySQL do painel InfinityFree.
+   O nome do banco deve ser o nome COMPLETO com prefixo (ex.: if0_XXXXXXXX_safeflow).
+3. No phpMyAdmin, selecione esse banco e importe banco/safeflow_completo.sql.
+   O SQL foi preparado para ser importado dentro de um banco ja criado; ele nao executa CREATE DATABASE/USE.
+4. Verifique se a extensao PDO MySQL e MySQLi estao habilitadas no PHP da hospedagem.
+5. Acesse login.php. O usuario demonstrativo incluido no SQL usa e-mail admin@safeflow.com.br e senha 123456.
+   Altere essa senha imediatamente apos o primeiro acesso.
+
+IMPORTANTE SOBRE SEGURANCA
+- A senha MySQL que estava no pacote original foi exposta no arquivo enviado. Troque-a no painel InfinityFree e atualize config/config.php.
+- A recuperacao de senha deste projeto e demonstrativa: o sistema mostra o link na tela e nao envia e-mail automaticamente. Configure um servico de e-mail antes de usar em producao.
+- Este pacote passou por verificacao estatica de sintaxe PHP. O funcionamento real depende das credenciais e configuracoes da conta InfinityFree e deve ser validado apos o envio.
